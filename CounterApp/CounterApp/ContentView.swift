@@ -12,13 +12,14 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("\(number)")
-            Button(action: {self.number += 1}) {
-                Text("カウント")
-            }
+            Button(action: {self.number += 1}, label: {Text("カウント")})
         }
     }
     func count() {
         self.number += 1
+    }
+    func text() -> Text {
+        Text("カウント")
     }
 }
 
