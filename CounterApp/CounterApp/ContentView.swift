@@ -17,6 +17,9 @@ struct ContentView: View {
             }
         }
     }
+    func count() {
+        self.number += 1
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
